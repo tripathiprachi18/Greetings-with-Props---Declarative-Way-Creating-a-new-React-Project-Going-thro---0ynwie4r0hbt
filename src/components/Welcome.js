@@ -2,11 +2,13 @@
 import React from 'react';
 
 function Welcome({name}){
-  return(
-    <div>
-    <h1>{ `Hello ${name}`}</h1>
-    <h2>{Welcome to the coding society}</h2>
-    </div>
+   let sayHi = `Hey ${name}!`;
+    let greetMessage = `Welcome to the coding society.`;
+    return (
+        <div>
+            <h1>{sayHi}</h1>
+            <h2>{greetMessage}</h2>
+        </div>
     );
   
 };
