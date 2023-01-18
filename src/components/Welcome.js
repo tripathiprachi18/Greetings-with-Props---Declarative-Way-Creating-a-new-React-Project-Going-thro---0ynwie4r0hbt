@@ -1,8 +1,8 @@
 // write code for Welcome component here
 import React from 'react';
 
-function Welcome({name}){
-   let sayHi = `Hey ${name}!`;
+const Welcome = ({name}) => {
+    let sayHi = `Hey ${name}!`;
     let greetMessage = `Welcome to the coding society.`;
     return (
         <div>
@@ -10,6 +10,6 @@ function Welcome({name}){
             <h2>{greetMessage}</h2>
         </div>
     );
-  
 };
+
 export default Welcome;
