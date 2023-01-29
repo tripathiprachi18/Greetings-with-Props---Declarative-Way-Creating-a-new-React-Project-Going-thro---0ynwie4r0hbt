@@ -1,5 +1,5 @@
 // write code for Welcome component here
-import React from 'react';
+import React,{useState} from 'react';
 
 const Welcome = ({name}) => {
     let sayHi = `Hey ${name}!`;
