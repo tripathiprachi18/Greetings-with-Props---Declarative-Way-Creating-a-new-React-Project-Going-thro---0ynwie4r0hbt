@@ -4,9 +4,13 @@ import Welcome from './Welcome';
 
 const App = () => {
  const[name,Setname]=useState("Prachi");
+ const [click,setClick]=useState(true);
+ const handleClick =(e)=>{
+  Setname(e.target.value)
+  setClick(!click)
+ }
   return (
-    <input type="text" onChange={(e)=>Setname(e.target.value)} value={name}></input>
-    <Welcome name= {name} />
+   {click ?<input type='text'placeholder='Enter Name' value={name} onchange={handleClick} /> : <Welcome />}
   )
 }
 
